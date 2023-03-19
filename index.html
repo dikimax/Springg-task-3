@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Конвертер валют</title>
+  </head>
+  <body>
+    <h1>Конвертер валют</h1>
+    <table>
+      <tr>
+        <td>Введите сумму:</td>
+        <td><input type="number" id="amount" name="amount" oninput="convert()"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Выберите валюту:</td>
+        <td>
+          <select id="currency" name="currency" onchange="convert()">
+            <option value="kzt">KZT</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+          </select>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2" id="result"></td>
+      </tr>
+      <tr>
+        <td>KZT (tenge)</td>
+        <td></td>
+        <td id="kzt-result"></td>
+      </tr>
+      <tr>
+        <td>USD (dollar)</td>
+        <td></td>
+        <td id="usd-result"></td>
+      </tr>
+      <tr>
+        <td>EUR (euro)</td>
+        <td></td>
+        <td id="eur-result"></td>
+      </tr>
+    </table>
+    <script>
+      function convert() {
+        // Получить введенную сумму и выбранную валюту
+        var amount = document.getElementById("amount").value;
+        var currency = document.getElementById("currency").value;
+  
+        // Выполнить конвертацию
+        var kztResult = amount + " тенге";
+        var usdResult = (amount * 429) + " долларов";
+        var eurResult = (amount * 507) + " евро";
+  
+        // Отобразить результаты
+        document.getElementById("result").innerHTML = "Результаты:";
+        document.getElementById("kzt-result").innerHTML = kztResult;
+        document.getElementById("usd-result").innerHTML = usdResult;
+        document.getElementById("eur-result").innerHTML = eurResult;
+      }
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Конвертер валют</title>
+  </head>
+  <body>
+    <h1>Конвертер валют</h1>
+    <table>
+      <tr>
+        <td>Введите сумму:</td>
+        <td><input type="number" id="amount" name="amount" oninput="convert()"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Выберите валюту:</td>
+        <td>
+          <select id="currency" name="currency" onchange="convert()">
+            <option value="kzt">KZT</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+          </select>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2" id="result"></td>
+      </tr>
+      <tr>
+        <td>KZT (tenge)</td>
+        <td></td>
+        <td id="kzt-result"></td>
+      </tr>
+      <tr>
+        <td>USD (dollar)</td>
+        <td></td>
+        <td id="usd-result"></td>
+      </tr>
+      <tr>
+        <td>EUR (euro)</td>
+        <td></td>
+        <td id="eur-result"></td>
+      </tr>
+    </table>
+    <script>
+      function convert() {
+        // Получить введенную сумму и выбранную валюту
+        var amount = document.getElementById("amount").value;
+        var currency = document.getElementById("currency").value;
+  
+        // Выполнить конвертацию
+        var kztResult = amount + " тенге";
+        var usdResult = (amount * 429) + " долларов";
+        var eurResult = (amount * 507) + " евро";
+  
+        // Отобразить результаты
+        document.getElementById("result").innerHTML = "Результаты:";
+        document.getElementById("kzt-result").innerHTML = kztResult;
+        document.getElementById("usd-result").innerHTML = usdResult;
+        document.getElementById("eur-result").innerHTML = eurResult;
+      }
+    </script>
+  </body>
+</html>
